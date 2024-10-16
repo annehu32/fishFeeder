@@ -26,6 +26,10 @@ def moveServo():
     servo.duty_u16(minPWM)
     time.sleep(2)
     print("at mid PWM")
+    
+    for i in range(0,10):
+        print("sleeping..... : "+str(i))
+        time.sleep(1)
         
 try:
     while True:
